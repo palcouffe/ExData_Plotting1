@@ -41,7 +41,7 @@ plot(SubDataSet$Date_time, SubDataSet$Voltage, type="l", xlab="datetime", ylab="
 plot(SubDataSet$Date_time, SubDataSet$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 lines(SubDataSet$Date_time, SubDataSet$Sub_metering_2, type="l", col="red")
 lines(SubDataSet$Date_time, SubDataSet$Sub_metering_3,type="l", col="blue")
-legend(x="topright", c("sub_metering_1","sub_metering_2","sub_metering_3"), border="white", lty=c(1,1,1), col=c("black","red","blue"))
+legend(x="topright", c("sub_metering_1","sub_metering_2","sub_metering_3"),bty="n", lty=c(1,1,1), col=c("black","red","blue"))
 
 # bottom right plot
 plot(SubDataSet$Date_time, SubDataSet$Global_reactive_power, type="l", xlab="datetime", ylab="Global_reactive_power")
